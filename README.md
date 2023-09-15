@@ -4,6 +4,7 @@ Making visual object tracking more efficient and faster.
 ## Performance
 ![](imgs/title_vs3.svg)
 
+<table class="tg">
 <thead>
   <tr>
     <th class="tg-0pky"></th>
