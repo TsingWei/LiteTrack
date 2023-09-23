@@ -1,0 +1,82 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "train_lite_B8",
+            "type": "python",
+            "request": "launch",
+            "program": "lib/train/run_training.py",
+            "args": [
+                "--script",
+                "ostrack",
+                "--config",
+                "B8_cae_center_got10k_ep100",
+                "--save_dir",
+                "./output",
+                "--use_lmdb",
+                "0",
+                "--script_prv",
+                "None",
+                "--config_prv",
+                "baseline",
+                "--distill",
+                "0",
+                "--script_teacher",
+                "None",
+                "--config_teacher",
+                "None",
+                "--use_wandb",
+                "0"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "eval_lite",
+            "type": "python",
+            "request": "launch",
+            "program": "tracking/test.py",
+            "args": [
+                "litetrack",
+                "B9_cae_center_got10k_ep100",
+                "--dataset",
+                "got10k_val",
+                "--threads",
+                "0",
+                "--num_gpus",
+                "1",
+                "--ep",
+                "100",
+                "--debug",
+                "1",
+                "--sequence",
+                "70"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "profile",
+            "type": "python",
+            "request": "launch",
+            "program": "tracking/profile_model.py",
+            "args": [
+
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+    ]
+}
