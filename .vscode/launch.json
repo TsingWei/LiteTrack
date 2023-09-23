@@ -20,7 +20,7 @@
             "program": "lib/train/run_training.py",
             "args": [
                 "--script",
-                "ostrack",
+                "litetrack",
                 "--config",
                 "B8_cae_center_got10k_ep100",
                 "--save_dir",
@@ -50,7 +50,7 @@
             "program": "tracking/test.py",
             "args": [
                 "litetrack",
-                "B9_cae_center_got10k_ep100",
+                "B4_cae_center_all_ep300",
                 "--dataset",
                 "got10k_val",
                 "--threads",
@@ -58,7 +58,7 @@
                 "--num_gpus",
                 "1",
                 "--ep",
-                "100",
+                "300",
                 "--debug",
                 "1",
                 "--sequence",
