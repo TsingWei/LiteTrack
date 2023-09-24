@@ -98,9 +98,30 @@ TODO list:
 </tbody>
 </table>
 
+## Prepare Environment
+
+Ensure that you have install the `pytorch` >= 1.8.1 and corresponding `torchvision` version.  It doesn't matter whether you use pip or conda.
+
+Then execute
+```sh
+bash install.sh
+```
+You can check the script where I install the `opencv-python-headless` library because of my headless server environment.  If you are running in a machine with GUI, you can comment that out.
+
+## Set project paths
+Run the following command to set paths for this project
+```
+python tracking/create_default_local_file.py --workspace_dir . --data_dir ./data --save_dir ./output
+```
+After running this command, you can also modify paths by editing these two files
+```
+lib/train/admin/local.py  # paths about training
+lib/test/evaluation/local.py  # paths about testing
+```
+
 ## Training and Evaluation on Datasets
 We support training following [OSTrack](https://github.com/botaoye/OSTrack).
-### Dataset Prepareration
+### Dataset Preparation
 Put the tracking datasets in ./data. It should look like this:
 ```
 ${PROJECT_ROOT}
