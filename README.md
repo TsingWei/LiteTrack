@@ -146,7 +146,7 @@ ${PROJECT_ROOT}
          |-- TEST
 ``` 
 ### Training
-Download pre-trained [CAE ViT-Base weights]()(cae_base.pth) and put it under  `$PROJECT_ROOT$/pretrained_models`.   
+Download pre-trained [CAE ViT-Base weights](https://github.com/lxtGH/CAE)(cae_base.pth) and put it under  `$PROJECT_ROOT$/pretrained_models`.   
 > **NOTE**: ViT in CAE is slightly different from the original ones (in Image is worth 16x16 words and MAE), e.g., projections of Q,K,V and layer scale.  Details can be seen in the code.
 
 Run the command below to train the model:
