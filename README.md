@@ -1,5 +1,5 @@
 # LiteTrack
-Making visual object tracking more efficient and faster.  
+Official implementation of [[arxiv]](https://arxiv.org/abs/2309.09249)"LiteTrack: Layer Pruning with Asynchronous Feature Extraction for Lightweight and Efficient Visual Tracking"
 
 TODO list:
 - [x] Release training and testing code.
