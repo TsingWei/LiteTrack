@@ -3,7 +3,7 @@ Making visual object tracking more efficient and faster.
 
 TODO list:
 - [x] Release training and testing code.
-- [ ] Release our trained models.
+- [x] Release our trained models.
 - [ ] Release onnx conversion and inference code. 
 ## Performance
 ![](imgs/title_vs3.svg)
