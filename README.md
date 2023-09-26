@@ -185,3 +185,5 @@ python lib/test/utils/transform_got10k.py --tracker_name litetrack --cfg_name B6
 python tracking/test.py litetrack B6_cae_center_all_ep300 --dataset got10k_test --threads 8 --num_gpus 1 --ep 300 299
 python lib/test/utils/transform_trackingnet.py --tracker_name litetrack --cfg_name B6_cae_center_all_ep300_300 # the last number is epoch
 ```
+## Acknowledgement
+Our code is built upon [OSTrack](https://github.com/botaoye/OSTrack). Also grateful for PyTracking.
