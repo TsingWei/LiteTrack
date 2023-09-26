@@ -164,7 +164,7 @@ python tracking/train.py --script litetrack --config B8_cae_center_got10k_ep100 
 - We save the checkpoints without optimization params in the last 20% epochs, for testing over these epochs to avoid accuracy jittering.
 
 ### Evaluation
-Use your own training weights or ours in `$PROJECT_ROOT$/output/checkpoints/train/litetrack`.  
+Use your own training weights or [ours](https://pan.baidu.com/s/1gBMSGc0i6-0nChKRAoJQCw?pwd=lite)(pwd=lite) in `$PROJECT_ROOT$/output/checkpoints/train/litetrack`.  
 Some testing examples:
 
 - LaSOT
