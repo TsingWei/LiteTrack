@@ -1,4 +1,6 @@
 # LiteTrack
+Our manuscript has been accepted by ICRA 2024.
+
 Official implementation of [[arxiv]](https://arxiv.org/abs/2309.09249)"LiteTrack: Layer Pruning with Asynchronous Feature Extraction for Lightweight and Efficient Visual Tracking"
 
 TODO list:
